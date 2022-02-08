@@ -89,7 +89,7 @@
       document.body.appendChild(script);
 
       window.addEventListener('unload', function(event) {
-          console.log("test");
+          unityInstance.SendMessage('SaveManager', 'Save');
       })
     </script>
   </body>
