@@ -87,6 +87,10 @@
         });
       };
       document.body.appendChild(script);
+
+      window.addEventListener('unload', function(event) {
+          console.log("test");
+      })
     </script>
   </body>
 </html>
