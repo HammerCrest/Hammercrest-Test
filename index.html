@@ -90,10 +90,6 @@
             });
         };
         document.body.appendChild(script);
-
-        window.addEventListener('beforeunload', function (e) {
-            window.unityInstance.SendMessage('Managers', 'Save');
-        });
     </script>
 </body>
 
